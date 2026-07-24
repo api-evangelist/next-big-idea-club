@@ -1,0 +1,334 @@
+openapi: 3.0.3
+info:
+  title: Next Big Idea Club members API
+  version: 1.0.0
+  description: First-party REST API (WordPress REST namespace members/v1) powering the Next Big Idea Club subscription, membership, library and course experience across web and the iOS/Android apps. Paths and HTTP methods derived verbatim from the provider-published /wp-json/ route discovery document; request/response schemas are not published by the provider.
+  x-derived: Paths and methods harvested from https://nextbigideaclub.com/wp-json/ (route discovery).
+servers:
+- url: https://nextbigideaclub.com/wp-json/members/v1
+tags:
+- name: members
+  description: Membership, subscription, library and course operations.
+paths:
+  ? ''
+  : get:
+      operationId: membersV1
+      summary: GET members/v1 members v1
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /abandoned:
+    get:
+      operationId: abandoned
+      summary: GET members/v1 abandoned
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /change-pwd:
+    post:
+      operationId: changePwd
+      summary: POST members/v1 change pwd
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /clerk/callback:
+    get:
+      operationId: clerkCallback
+      summary: GET members/v1 clerk callback
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /clerk/login:
+    get:
+      operationId: clerkLogin
+      summary: GET members/v1 clerk login
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /course/lmsTrackByKey:
+    post:
+      operationId: courseLmstrackbykey
+      summary: POST members/v1 course lmsTrackByKey
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /create:
+    post:
+      operationId: create
+      summary: POST members/v1 create
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /delete_account:
+    post:
+      operationId: deleteAccount
+      summary: POST members/v1 delete account
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /detail:
+    get:
+      operationId: detail
+      summary: GET members/v1 detail
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /library:
+    post:
+      operationId: library
+      summary: POST members/v1 library
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /members-library-link:
+    post:
+      operationId: membersLibraryLink
+      summary: POST members/v1 members library link
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /plans:
+    get:
+      operationId: plans
+      summary: GET members/v1 plans
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /reset-pwd:
+    post:
+      operationId: resetPwd
+      summary: POST members/v1 reset pwd
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /signInWithThirdParty:
+    post:
+      operationId: signInWithThirdParty
+      summary: POST members/v1 signInWithThirdParty
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /signup:
+    post:
+      operationId: signup
+      summary: POST members/v1 signup
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /subscribe:
+    post:
+      operationId: subscribe
+      summary: POST members/v1 subscribe
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /subscribe-in-app:
+    post:
+      operationId: subscribeInApp
+      summary: POST members/v1 subscribe in app
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /track/course:
+    post:
+      operationId: trackCourse
+      summary: POST members/v1 track course
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /unsubscribe-in-app:
+    post:
+      operationId: unsubscribeInApp
+      summary: POST members/v1 unsubscribe in app
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /update-status:
+    get:
+      operationId: updateStatus
+      summary: GET members/v1 update status
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /update-subscriptions:
+    get:
+      operationId: updateSubscriptions
+      summary: GET members/v1 update subscriptions
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /updateUser:
+    post:
+      operationId: updateUser
+      summary: POST members/v1 updateUser
+      tags:
+      - members
+      security:
+      - oauth2:
+        - basic
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      description: WP OAuth Server (OAuth 2.0 / OpenID Connect).
+      flows:
+        authorizationCode:
+          authorizationUrl: https://nextbigideaclub.com/oauth/authorize/
+          tokenUrl: https://nextbigideaclub.com/oauth/token/
+          scopes:
+            openid: OpenID Connect authentication
+            profile: Basic profile
+            email: Email address
+            basic: Basic account access
