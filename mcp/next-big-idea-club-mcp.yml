@@ -1,0 +1,44 @@
+generated: '2026-07-20'
+method: derived
+status: candidate
+source: openapi/next-big-idea-club-members-openapi.yml
+server:
+  name: next-big-idea-club
+  transport: http
+  note: >
+    No official hosted MCP server was found for Next Big Idea Club. The tools below are a candidate
+    surface derived from the first-party members/v1 REST operations; auth is OAuth 2.0 (WP OAuth Server).
+tools:
+  - name: get_member_detail
+    description: Retrieve the authenticated member's account detail.
+    source_operation: openapi/next-big-idea-club-members-openapi.yml#detail
+  - name: list_plans
+    description: List available subscription plans.
+    source_operation: openapi/next-big-idea-club-members-openapi.yml#plans
+  - name: signup_member
+    description: Sign up a new member.
+    source_operation: openapi/next-big-idea-club-members-openapi.yml#signup
+  - name: subscribe_member
+    description: Subscribe a member to a plan.
+    source_operation: openapi/next-big-idea-club-members-openapi.yml#subscribe
+  - name: unsubscribe_member_in_app
+    description: Cancel an in-app subscription.
+    source_operation: openapi/next-big-idea-club-members-openapi.yml#unsubscribeInApp
+  - name: get_member_library
+    description: Retrieve the member's library.
+    source_operation: openapi/next-big-idea-club-members-openapi.yml#library
+  - name: track_course_progress
+    description: Record course progress for the member.
+    source_operation: openapi/next-big-idea-club-members-openapi.yml#trackCourse
+  - name: change_password
+    description: Change the member's password.
+    source_operation: openapi/next-big-idea-club-members-openapi.yml#changePwd
+  - name: reset_password
+    description: Trigger a member password reset.
+    source_operation: openapi/next-big-idea-club-members-openapi.yml#resetPwd
+  - name: update_user
+    description: Update member profile attributes.
+    source_operation: openapi/next-big-idea-club-members-openapi.yml#updateUser
+  - name: delete_account
+    description: Delete the member's account.
+    source_operation: openapi/next-big-idea-club-members-openapi.yml#deleteAccount

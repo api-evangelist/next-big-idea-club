@@ -1,0 +1,34 @@
+generated: '2026-07-20'
+method: derived
+source: WordPress REST API error conventions + openapi/next-big-idea-club-members-openapi.yml
+format: wordpress-rest
+envelope:
+  code: string machine-readable error code
+  message: human-readable description
+  data:
+    status: HTTP status code
+problems:
+  - status: 400
+    code: rest_invalid_param
+    title: Invalid or missing request parameter
+    remediation: Verify the request body/query parameters required by the operation.
+  - status: 401
+    code: rest_not_logged_in
+    title: Authentication required
+    remediation: Present a valid OAuth 2.0 bearer token (see authentication/).
+  - status: 403
+    code: rest_forbidden
+    title: Insufficient permissions for this resource
+    remediation: Ensure the authenticated member is authorized for the operation and scope.
+  - status: 404
+    code: rest_no_route
+    title: No route matched the request
+    remediation: Check the endpoint path and namespace (members/v1).
+  - status: 500
+    code: internal_server_error
+    title: Unexpected server error
+    remediation: Retry later; contact support@nextbigideaclub.com if persistent.
+notes: >
+  The members/v1 endpoints do not publish per-operation error schemas; the codes above are the
+  standard WordPress REST API error contract that governs these routes. Titles/remediation derived,
+  not scraped from a provider error reference (none published).

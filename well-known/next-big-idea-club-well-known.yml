@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: live fetch of https://nextbigideaclub.com/.well-known/* and /wp-json/
+host: https://nextbigideaclub.com
+documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: next-big-idea-club-openid-configuration.json
+    note: OpenID Connect discovery (WP OAuth Server)
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: next-big-idea-club-oauth-authorization-server.json
+    note: RFC 8414 OAuth 2.0 authorization server metadata
+  - path: /wp-json/
+    status: 200
+    file: next-big-idea-club-wp-json.json
+    note: WordPress REST API discovery index (15 namespaces, 127 routes, oauth2 auth)
+  - path: /.well-known/security.txt
+    status: none
+    note: no RFC 9116 security.txt; path returns the WP OAuth Server error JSON, not a policy
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404

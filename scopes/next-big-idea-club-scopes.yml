@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: https://nextbigideaclub.com/.well-known/openid-configuration
+docs: https://nextbigideaclub.com/.well-known/openid-configuration
+schemes:
+  - name: oauth2
+    software: WP OAuth Server
+    source: well-known/next-big-idea-club-openid-configuration.json
+    flows:
+      - flow: authorizationCode
+        authorizationUrl: https://nextbigideaclub.com/oauth/authorize/
+        tokenUrl: https://nextbigideaclub.com/oauth/token/
+scopes:
+  - scope: openid
+    description: Authenticate the user and return an OpenID Connect ID token.
+    flows: [authorizationCode]
+    sources: [well-known/next-big-idea-club-openid-configuration.json]
+  - scope: profile
+    description: Access the member's basic profile information.
+    flows: [authorizationCode]
+    sources: [well-known/next-big-idea-club-openid-configuration.json]
+  - scope: email
+    description: Access the member's email address.
+    flows: [authorizationCode]
+    sources: [well-known/next-big-idea-club-openid-configuration.json]
+  - scope: basic
+    description: Basic account access.
+    flows: [authorizationCode]
+    sources: [well-known/next-big-idea-club-openid-configuration.json]

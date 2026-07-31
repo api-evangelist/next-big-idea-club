@@ -1,0 +1,40 @@
+generated: '2026-07-20'
+method: derived
+source: well-known/next-big-idea-club-wp-json.json + openapi/next-big-idea-club-members-openapi.yml
+transport:
+  base_url: https://nextbigideaclub.com/wp-json
+  style: REST (WordPress REST API)
+  formats: [application/json]
+authentication:
+  style: oauth2
+  detail: WP OAuth Server (OAuth 2.0 / OpenID Connect); see authentication/next-big-idea-club-authentication.yml
+  scopes: [openid, profile, email, basic]
+error_envelope:
+  format: wordpress-rest
+  shape: '{ "code": "<string>", "message": "<human readable>", "data": { "status": <http-status> } }'
+  detail: >
+    WordPress REST API standard error object. Non-2xx responses carry a machine-readable string code,
+    a human message, and a data.status echoing the HTTP status. See errors/next-big-idea-club-problem-types.yml.
+idempotency:
+  supported: false
+  detail: No idempotency-key header or parameter is documented for the members/v1 API.
+pagination:
+  supported: partial
+  detail: >
+    Custom members/v1 endpoints are action-oriented and not paginated. The generic wp/v2 namespace uses
+    WordPress standard page/per_page query parameters with X-WP-Total / X-WP-TotalPages response headers.
+versioning:
+  scheme: uri-path-namespace
+  detail: Version carried in the REST namespace path segment (e.g. members/v1).
+integrations:
+  - stripe:
+      detail: >
+        Inbound Stripe webhook receivers under the /wp-json/stripe namespace
+        (session-completed, subscription-updated, subscription-cancelled) drive subscription state.
+        These are receiver endpoints consumed from Stripe, not a consumer-facing webhook product.
+  - rownd: Passwordless auth namespace (rownd/v1) present.
+  - apple_android: Native app support namespaces (apple, android, members/v1 *-in-app endpoints).
+cross_links:
+  authentication: authentication/next-big-idea-club-authentication.yml
+  scopes: scopes/next-big-idea-club-scopes.yml
+  errors: errors/next-big-idea-club-problem-types.yml

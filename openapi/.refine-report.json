@@ -1,0 +1,14 @@
+{
+  "provider": "next-big-idea-club",
+  "sources": [
+    "next-big-idea-club-members-api-openapi.yml"
+  ],
+  "outputs": [
+    "next-big-idea-club-members-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

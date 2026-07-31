@@ -1,0 +1,35 @@
+generated: '2026-07-20'
+method: searched
+source: https://nextbigideaclub.com/.well-known/openid-configuration
+docs: https://nextbigideaclub.com/.well-known/openid-configuration
+summary:
+  types: [oauth2, openIdConnect]
+  oauth2_flows: [authorizationCode, clientCredentials, implicit, password, refreshToken]
+  software: WP OAuth Server
+schemes:
+  - name: oauth2
+    type: oauth2
+    software: WP OAuth Server
+    issuer: https://nextbigideaclub.com
+    authorization_endpoint: https://nextbigideaclub.com/oauth/authorize/
+    token_endpoint: https://nextbigideaclub.com/oauth/token/
+    userinfo_endpoint: https://nextbigideaclub.com/oauth/me/
+    introspection_endpoint: https://nextbigideaclub.com/oauth/introspection/
+    revocation_endpoint: https://nextbigideaclub.com/oauth/destroy/
+    end_session_endpoint: https://nextbigideaclub.com/oauth/destroy/
+    jwks_uri: https://nextbigideaclub.com/.well-known/keys/
+    grant_types_supported: [authorization_code, client_credentials, refresh_token, user_credentials, implicit]
+    response_types_supported: [code, id_token, token id_token, code id_token]
+    token_endpoint_auth_methods_supported: [client_secret_basic]
+    id_token_signing_alg_values_supported: [RS256]
+    scopes: [openid, profile, email, basic]
+    sources: [well-known/next-big-idea-club-openid-configuration.json]
+  - name: openIdConnect
+    type: openIdConnect
+    openIdConnectUrl: https://nextbigideaclub.com/.well-known/openid-configuration
+    subject_types_supported: [public]
+    sources: [well-known/next-big-idea-club-openid-configuration.json]
+notes: >
+  The provider exposes a full OAuth 2.0 / OpenID Connect surface via the WP OAuth Server plugin,
+  used to authenticate members across the web experience and the iOS/Android apps. The bespoke
+  members/v1 REST API (openapi/) is protected by these tokens.

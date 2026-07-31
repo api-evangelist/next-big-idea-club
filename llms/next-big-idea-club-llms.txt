@@ -1,0 +1,29 @@
+# Next Big Idea Club
+
+> Next Big Idea Club is a nonfiction book subscription club and podcast, curating the most important new nonfiction with a selection committee of Malcolm Gladwell, Adam Grant, Susan Cain, and Daniel Pink. Members receive curated new nonfiction, an app-based library, courses, and author interviews. The consumer experience is powered by a first-party WordPress REST API (members/v1) secured with OAuth 2.0 / OpenID Connect via the WP OAuth Server, integrated with Stripe for subscription billing and with native iOS/Android apps.
+
+## APIs
+- [Members API (members/v1)](https://nextbigideaclub.com/wp-json/members/v1): First-party subscription, membership, library, and course API.
+- [WordPress REST discovery](https://nextbigideaclub.com/wp-json/): API index across 15 namespaces (members/v1, stripe, apple, android, automation, wp/v2, ...).
+
+## Specs
+- [OpenAPI (members, derived)](https://raw.githubusercontent.com/api-evangelist/next-big-idea-club/refs/heads/main/openapi/next-big-idea-club-members-openapi.yml)
+- [OpenID Connect discovery](https://nextbigideaclub.com/.well-known/openid-configuration)
+- [OAuth 2.0 authorization server metadata](https://nextbigideaclub.com/.well-known/oauth-authorization-server)
+
+## Authentication
+- [Authentication profile](https://raw.githubusercontent.com/api-evangelist/next-big-idea-club/refs/heads/main/authentication/next-big-idea-club-authentication.yml): OAuth 2.0 / OIDC (WP OAuth Server).
+- [OAuth scopes](https://raw.githubusercontent.com/api-evangelist/next-big-idea-club/refs/heads/main/scopes/next-big-idea-club-scopes.yml): openid, profile, email, basic.
+
+## Docs
+- [Website](https://nextbigideaclub.com/)
+- [About](https://nextbigideaclub.com/about-us/)
+- [FAQs / Support](https://nextbigideaclub.com/faqs/)
+- [Podcast](https://nextbigideaclub.com/podcast/)
+- [Magazine](https://nextbigideaclub.com/magazine/)
+- [Apps](https://nextbigideaclub.com/app/)
+- [Enterprise](https://nextbigideaclub.com/enterprise/)
+- [Gift](https://nextbigideaclub.com/gift/)
+- [Login](https://nextbigideaclub.com/login/)
+- [Terms and Conditions](https://nextbigideaclub.com/terms-and-conditions/)
+- [Privacy](https://nextbigideaclub.com/data-privacy/)

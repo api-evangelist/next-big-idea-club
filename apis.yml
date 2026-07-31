@@ -1,8 +1,14 @@
 aid: next-big-idea-club
 name: Next Big Idea Club
-description: Next Big Idea Club is a company surfaced as a portfolio company of bloomberg-beta and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Next Big Idea Club is a nonfiction book subscription club and podcast that curates the most
+  important new nonfiction, chosen by a selection committee of Malcolm Gladwell, Adam Grant, Susan
+  Cain, and Daniel Pink. Members receive curated new nonfiction, an in-app library, courses, and
+  author interviews across the web and native iOS/Android apps. The consumer experience is powered
+  by a first-party WordPress REST API (the members/v1 namespace) secured with OAuth 2.0 / OpenID
+  Connect via the WP OAuth Server, with Stripe integration for subscription billing. This profile
+  was seeded as a Bloomberg Beta portfolio lead and enriched from the provider's public /wp-json/
+  discovery and /.well-known/ OAuth surface.
 url: https://raw.githubusercontent.com/api-evangelist/next-big-idea-club/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +16,42 @@ x-backed-by:
 - bloomberg-beta
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://nextbigideaclub.com/wp-content/plugins/helium/themes/helium/favicon.ico
 tags:
 - Company
-apis: []
+- Books
+- Media
+- Subscription
+- Nonfiction
+- Podcast
+- Education
+- Membership
+apis:
+- aid: next-big-idea-club:next-big-idea-club-members-api
+  name: Next Big Idea Club members API
+  description: Membership, subscription, library and course operations.
+  humanURL: https://nextbigideaclub.com/
+  baseURL: https://nextbigideaclub.com/wp-json/members/v1
+  tags:
+  - members
+  properties:
+  - type: OpenAPI
+    url: openapi/next-big-idea-club-members-api-openapi.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -24,3 +60,34 @@ maintainers:
 common:
 - type: Website
   url: https://nextbigideaclub.com/
+- type: Login
+  url: https://nextbigideaclub.com/login/
+- type: Support
+  url: https://nextbigideaclub.com/faqs/
+- type: TermsOfService
+  url: https://nextbigideaclub.com/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://nextbigideaclub.com/data-privacy/
+- type: Blog
+  url: https://nextbigideaclub.com/magazine/
+- type: WellKnown
+  url: well-known/next-big-idea-club-well-known.yml
+- type: Authentication
+  url: authentication/next-big-idea-club-authentication.yml
+- type: OAuthScopes
+  url: scopes/next-big-idea-club-scopes.yml
+- type: MCPServer
+  url: mcp/next-big-idea-club-mcp.yml
+- type: LLMsTxt
+  url: llms/next-big-idea-club-llms.txt
+- type: Conventions
+  url: conventions/next-big-idea-club-conventions.yml
+- type: ErrorCatalog
+  url: errors/next-big-idea-club-problem-types.yml
+- type: DomainSecurity
+  url: security/next-big-idea-club-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 10
+  pass: local-v1

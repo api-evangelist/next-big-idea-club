@@ -1,0 +1,17 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for Next Big Idea Club Members API
+  version: 1.0.0
+extends: openapi/next-big-idea-club-members-openapi.yml
+actions:
+  - target: $.info
+    update:
+      x-apievangelist-source: https://nextbigideaclub.com/wp-json/
+      x-apievangelist-derivation: paths and methods harvested from WordPress /wp-json/ route discovery
+      x-apievangelist-note: request/response schemas not published by the provider; operations are action-oriented
+  - target: $.info
+    update:
+      contact:
+        name: Next Big Idea Club Support
+        email: support@nextbigideaclub.com
+        url: https://nextbigideaclub.com/faqs/
