@@ -1,0 +1,480 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Next Big Idea Club members API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "members",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET members/v1 members v1",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "GET members/v1 members v1"
+        },
+        {
+          "info": {
+            "name": "GET members/v1 abandoned",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/abandoned",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "GET members/v1 abandoned"
+        },
+        {
+          "info": {
+            "name": "POST members/v1 change pwd",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/change-pwd",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "POST members/v1 change pwd"
+        },
+        {
+          "info": {
+            "name": "GET members/v1 clerk callback",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/clerk/callback",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "GET members/v1 clerk callback"
+        },
+        {
+          "info": {
+            "name": "GET members/v1 clerk login",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/clerk/login",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "GET members/v1 clerk login"
+        },
+        {
+          "info": {
+            "name": "POST members/v1 course lmsTrackByKey",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/course/lmsTrackByKey",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "POST members/v1 course lmsTrackByKey"
+        },
+        {
+          "info": {
+            "name": "POST members/v1 create",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/create",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "POST members/v1 create"
+        },
+        {
+          "info": {
+            "name": "POST members/v1 delete account",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/delete_account",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "POST members/v1 delete account"
+        },
+        {
+          "info": {
+            "name": "GET members/v1 detail",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/detail",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "GET members/v1 detail"
+        },
+        {
+          "info": {
+            "name": "POST members/v1 library",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/library",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "POST members/v1 library"
+        },
+        {
+          "info": {
+            "name": "POST members/v1 members library link",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/members-library-link",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "POST members/v1 members library link"
+        },
+        {
+          "info": {
+            "name": "GET members/v1 plans",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/plans",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "GET members/v1 plans"
+        },
+        {
+          "info": {
+            "name": "POST members/v1 reset pwd",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/reset-pwd",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "POST members/v1 reset pwd"
+        },
+        {
+          "info": {
+            "name": "POST members/v1 signInWithThirdParty",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/signInWithThirdParty",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "POST members/v1 signInWithThirdParty"
+        },
+        {
+          "info": {
+            "name": "POST members/v1 signup",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/signup",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "POST members/v1 signup"
+        },
+        {
+          "info": {
+            "name": "POST members/v1 subscribe",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/subscribe",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "POST members/v1 subscribe"
+        },
+        {
+          "info": {
+            "name": "POST members/v1 subscribe in app",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/subscribe-in-app",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "POST members/v1 subscribe in app"
+        },
+        {
+          "info": {
+            "name": "POST members/v1 track course",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/track/course",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "POST members/v1 track course"
+        },
+        {
+          "info": {
+            "name": "POST members/v1 unsubscribe in app",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/unsubscribe-in-app",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "POST members/v1 unsubscribe in app"
+        },
+        {
+          "info": {
+            "name": "GET members/v1 update status",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/update-status",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "GET members/v1 update status"
+        },
+        {
+          "info": {
+            "name": "GET members/v1 update subscriptions",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/update-subscriptions",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "GET members/v1 update subscriptions"
+        },
+        {
+          "info": {
+            "name": "POST members/v1 updateUser",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://nextbigideaclub.com/wp-json/members/v1/updateUser",
+            "auth": {
+              "type": "oauth2",
+              "flow": "authorization_code",
+              "authorizationUrl": "https://nextbigideaclub.com/oauth/authorize/",
+              "accessTokenUrl": "https://nextbigideaclub.com/oauth/token/",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "POST members/v1 updateUser"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
