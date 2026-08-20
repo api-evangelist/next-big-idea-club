@@ -48,6 +48,8 @@ apis:
   humanURL: https://nextbigideaclub.com/
   baseURL: https://nextbigideaclub.com/wp-json/members/v1
   tags:
+  - Members
+  tags_raw:
   - members
   properties:
   - type: OpenAPI
