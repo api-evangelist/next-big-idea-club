@@ -1,13 +1,13 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
-  title: Next Big Idea Club members API
+  title: Next Big Idea Club Members API
   version: 1.0.0
   description: First-party REST API (WordPress REST namespace members/v1) powering the Next Big Idea Club subscription, membership, library and course experience across web and the iOS/Android apps. Paths and HTTP methods derived verbatim from the provider-published /wp-json/ route discovery document; request/response schemas are not published by the provider.
   x-derived: Paths and methods harvested from https://nextbigideaclub.com/wp-json/ (route discovery).
 servers:
 - url: https://nextbigideaclub.com/wp-json/members/v1
 tags:
-- name: members
+- name: Members
   description: Membership, subscription, library and course operations.
 paths:
   ? ''
@@ -15,7 +15,7 @@ paths:
       operationId: membersV1
       summary: GET members/v1 members v1
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -29,7 +29,7 @@ paths:
       operationId: abandoned
       summary: GET members/v1 abandoned
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -43,7 +43,7 @@ paths:
       operationId: changePwd
       summary: POST members/v1 change pwd
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -57,7 +57,7 @@ paths:
       operationId: clerkCallback
       summary: GET members/v1 clerk callback
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -71,7 +71,7 @@ paths:
       operationId: clerkLogin
       summary: GET members/v1 clerk login
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -85,7 +85,7 @@ paths:
       operationId: courseLmstrackbykey
       summary: POST members/v1 course lmsTrackByKey
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -99,7 +99,7 @@ paths:
       operationId: create
       summary: POST members/v1 create
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -113,7 +113,7 @@ paths:
       operationId: deleteAccount
       summary: POST members/v1 delete account
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -127,7 +127,7 @@ paths:
       operationId: detail
       summary: GET members/v1 detail
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -141,7 +141,7 @@ paths:
       operationId: library
       summary: POST members/v1 library
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -155,7 +155,7 @@ paths:
       operationId: membersLibraryLink
       summary: POST members/v1 members library link
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -169,7 +169,7 @@ paths:
       operationId: plans
       summary: GET members/v1 plans
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -183,7 +183,7 @@ paths:
       operationId: resetPwd
       summary: POST members/v1 reset pwd
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -197,7 +197,7 @@ paths:
       operationId: signInWithThirdParty
       summary: POST members/v1 signInWithThirdParty
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -211,7 +211,7 @@ paths:
       operationId: signup
       summary: POST members/v1 signup
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -225,7 +225,7 @@ paths:
       operationId: subscribe
       summary: POST members/v1 subscribe
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -239,7 +239,7 @@ paths:
       operationId: subscribeInApp
       summary: POST members/v1 subscribe in app
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -253,7 +253,7 @@ paths:
       operationId: trackCourse
       summary: POST members/v1 track course
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -267,7 +267,7 @@ paths:
       operationId: unsubscribeInApp
       summary: POST members/v1 unsubscribe in app
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -281,7 +281,7 @@ paths:
       operationId: updateStatus
       summary: GET members/v1 update status
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -295,7 +295,7 @@ paths:
       operationId: updateSubscriptions
       summary: GET members/v1 update subscriptions
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
@@ -309,7 +309,7 @@ paths:
       operationId: updateUser
       summary: POST members/v1 updateUser
       tags:
-      - members
+      - Members
       security:
       - oauth2:
         - basic
