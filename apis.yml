@@ -63,18 +63,20 @@ tags_raw:
 - Education
 - Membership
 apis:
-- aid: next-big-idea-club:next-big-idea-club-members-api
-  name: Next Big Idea Club members API
-  description: Membership, subscription, library and course operations.
-  humanURL: https://nextbigideaclub.com/
-  baseURL: https://nextbigideaclub.com/wp-json/members/v1
+- aid: next-big-idea-club:nextbigideaclub-com-website-wordpress-rest
+  name: Next Big Idea Club Website (WordPress REST)
+  description: 'The public WordPress REST API (wp-json) of the Next Big Idea Club website at nextbigideaclub.com:
+    the route index of the site''s content management system, catalogued as one site surface rather than
+    as separate APIs.'
+  baseURL: https://nextbigideaclub.com/wp-json
   tags:
-  - Members
-  tags_raw:
-  - members
+  - WordPress
+  x-surface: platform-generated
   properties:
-  - type: OpenAPI
-    url: openapi/next-big-idea-club-members-api-openapi.yml
+  - type: Documentation
+    url: https://nextbigideaclub.com/wp-json
+  x-platform: wordpress
+  x-platform-surface: rest
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
